@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF0F6;
+    color: #49345C;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #C4B5FD;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav h2 {
+    color: #5B21B6;
+}
+
+nav a {
+    color: #4C1D95;
+    text-decoration: none;
+    margin: 8px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #EC4899;
+}
+
+/* HOME */
+header {
+    background: linear-gradient(135deg, #FBCFE8, #C4B5FD, #BFDBFE);
+    text-align: center;
+    padding: 60px 20px;
+    color: #4C1D95;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 35px;
+    margin: 15px;
+}
+
+header p {
+    margin: 20px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background-color: #EC4899;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #8B5CF6;
+}
+
+/* SECTIONS */
+section {
+    margin: 25px;
+    padding: 35px 20px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 2px solid #FBCFE8;
+}
+
+section h2 {
+    color: #9333EA;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+section p {
+    margin: 12px;
+    line-height: 1.6;
+}
+
+span {
+    color: #EC4899;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #F3E8FF;
+    padding: 20px;
+    width: 220px;
+    border: 2px solid #DDD6FE;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background-color: #FCE7F3;
+    transform: translateY(-8px);
+    border-color: #F472B6;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.card h3 {
+    color: #9333EA;
+    margin: 12px 0;
+}
+
+/* FOOTER */
+footer {
+    background-color: #C4B5FD;
+    color: #4C1D95;
+    padding: 25px;
+    text-align: center;
+}
+
+/* MOBILE DESIGN */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    section {
+        margin: 12px;
+        padding: 25px 12px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
